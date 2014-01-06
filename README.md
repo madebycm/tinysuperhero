@@ -1,4 +1,4 @@
-# Tiny Superhero Framework
+# TinySuperhero Framework
 #### v0.2.0
 
 This is a small no-dependency framework to abstract away DOM events.
