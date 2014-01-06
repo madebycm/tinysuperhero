@@ -2,18 +2,23 @@
 
 This is a small no-dependency framework to abstract away DOM events.
 
+The ```TinySuperhero``` object is exposed on the window. Use ```run()``` to set up all required bindings.
+
 Example usage:
 
 ```
-actions: [
+TinySuperhero.run({
+  actions: [
     'click header toggleMenu'
-],
-functions: {
-    toggleMenu: function(){
-        document.querySelector('#menu').classList.toggle('menu');
-    }
-}
+  ],
+  functions: {
+      toggleMenu: function(){
+          document.querySelector('#menu').classList.toggle('menu');
+      }
+  }
+});
 ```
+
 When you click on ```<header>```the function ```toggleMenu``` will fire.
 
 It is possible to make events bubble by supplying ```[delegate]``` as the last parameter when declaring actions.
