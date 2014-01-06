@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<h1>the majestic header</h1>
+
+<div id="someID">
+  Some content
+</div>
+
+<script type="text/javascript" src="../tsfw0.1.0.js"></script>
+<script type="text/javascript">
+TinySuperhero.run({
+  actions: [
+    'click h1 doSomething',
+    'click #someID doSomething'
+  ],
+  functions: {
+    doSomething: function(e){
+      alert('I am doing something on ' + (e.target.id || e.target.innerText) + '!');
+    }
+  }
+});
+</script>
+</body>
+</html>
