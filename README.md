@@ -3,9 +3,13 @@
 
 This is a small no-dependency framework to abstract away DOM events.
 
-The ```TinySuperhero``` object is exposed on the window. Use ```run()``` to set up all required bindings.
+## Install with Bower
 
-Example usage:
+```bower install TinySuperhero```
+
+## Example usage
+
+The ```TinySuperhero``` object is exposed on the window. Use ```run()``` to set up all required bindings.
 
 ```
 TinySuperhero.run({
@@ -29,4 +33,3 @@ actions: [
     'click #someElementThatDoesNotYetExist doSomething [delegate]'
 ]
 ````
-**Patches welcome!**
