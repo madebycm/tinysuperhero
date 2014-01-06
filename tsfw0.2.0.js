@@ -7,7 +7,7 @@
  * http://en.wikipedia.org/wiki/MIT_License
  */
 'use strict';
-console.log("TinySuperheroFWv0.1.0");
+console.log("TinySuperheroFWv0.2.0");
 var App = {
   _$bindEvents: function(){
     var self = this;
