@@ -1,4 +1,4 @@
-(function(){
+(function(_tsh_){
 /**
  * TinySuperhero Framework
  * (c) madebycm 2013-2014
@@ -8,24 +8,7 @@
  */
 'use strict';
 console.log("TinySuperheroFWv0.1.0");
-var App = {          
-  actions: [
-    /*
-     * Define your actions here  
-     *
-     * When [delegate] is supplied as the last parameter,
-     * this event will be bound to 'body' so it will bubble.
-     * Typically used for content that does not yet exist in the DOM
-     * 
-     */
-    'click h1 doSomething',
-    'click #someID doSomething [delegate]'
-  ],
-  functions: {
-    doSomething: function(){
-      alert('Doing something!');
-    }
-  },
+var App = {
   _$bindEvents: function(){
     var self = this;
     this.actions.forEach(function(acs){
@@ -81,5 +64,6 @@ var App = {
     this._$bindEvents();
   }
 };
-App._run(); /* fire! */
-})();
+_tsh_.TinySuperhero=App;
+return App;
+})(this);
