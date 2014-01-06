@@ -69,7 +69,15 @@ var App = {
     }
     else return;
   },
-  _run: function(){
+  run: function(props){
+    if(!props.actions)
+      throw "Missing action definitions";
+    if(!props.functions)
+      throw "Missing function definitions";
+
+    this.actions = props.actions;
+    this.functions = props.functions;
+
     this._$bindEvents();
   }
 };
