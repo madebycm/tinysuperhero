@@ -29,3 +29,4 @@ actions: [
     'click #someElementThatDoesNotYetExist doSomething [delegate]'
 ]
 ````
+**Patches welcome!**
